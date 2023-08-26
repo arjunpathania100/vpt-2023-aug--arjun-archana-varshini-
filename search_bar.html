@@ -5,29 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>library</title>
     <link rel="stylesheet" href="search_bar.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <style>
+        .input1{
+    background-color:#054d95;
+    flex:1;
+    border:0;
+    outline:none;
+    padding:24px 20px;
+    font-size: 20px;
+    color:#000003;
+
+}
+.button1{
+    background-color: rgb(29, 176, 29);
+    width:150px;
+    height:60px;
+    border: none;
+    color: white;
+    font-weight:bold;
+    font-size:large;
+    border-radius:15px;
+
+}
+
+    </style>
 </head>
 <body>
    <nav>
     <label class="logo">Book World</label>
     <ul>
-       
-        <li><a href="#">Home</a></li>
+        <li><a href="log.html">Login</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a class="active" href="#">Search</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
+        
+       
+        
     </ul>
    </nav>
-   <section style="background-image: url('images/book.jpg'); background-size: cover; height: calc(100vh - 80px);">
-    <div class="main">
-        <input type="text" name="box" placeholder="Search anything....">
-    </div>
-    <div class="btn">
-        <a href="#"><i class="fa fa-search"></i></a>
-    </div>
-    
-    
-   </section>
-    
+   <!-- <div class="container">
+    <form action="" class="search-bar"> -->
+        <input id="inputField" type="text" placeholder="Search anything" class="input1">
+        <button onclick="getBook() " class="button1">Search</button><br>
+    <!-- </form>
+   </div> -->
+   <div id="output"></div>
+   <script src="search.js"></script>
 </body>
 </html>
